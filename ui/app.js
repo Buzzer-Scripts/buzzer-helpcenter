@@ -17,7 +17,8 @@ $(function() {
         $.getJSON("./lists.json", function(data) {
             var selectedTabData = data.find(item => item.id === tabId);
             if (selectedTabData) {
-                $("#bz-container-1 .left-title").text(selectedTabData.title);
+                $("#bz-container-1 .menu-header--content").text(selectedTabData.title);
+                $("#bz-container-1 .menu-header--subcontent").text(selectedTabData.description);
                 var accordionContent = '';
                 $.each(selectedTabData.contents, function(i, item) {
                     accordionContent += `

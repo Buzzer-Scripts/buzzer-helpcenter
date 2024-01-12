@@ -320,8 +320,8 @@ body {
 
 .return__back {
     position: absolute;
-    top: 2.8%;
-    right: 2%;
+    top: 3%;
+    left: 2.25%;
     z-index: 999999;
     font-size: 2.5vh;
     color: var(--main-white-color);
@@ -516,6 +516,36 @@ body {
     border-bottom: .1vw solid var(--main-border-color);
     border-bottom-left-radius: .25vw;
     border-bottom-right-radius: .25vw;
+}
+
+.menu-header--title {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    zoom: .95;
+}
+
+.menu-header--title .menu-header--content {
+    margin-top: 10.25vh;
+    font-size: 3vh;
+    color: var(--main-white-color);
+    text-transform: var(--main-font-transform);
+    font-weight: var(--main-bold-font);
+    margin-bottom: 1.6vh;
+    text-align: center;
+}
+
+.menu-header--subcontent {
+    font-size: 1.4vh;
+    color: var(--main-white-color);
+    font-weight: 500;
+    line-height: 2.4vh;
+    font-family: 'Montserrat', sans-serif;
+    width: 25%;
+    text-align: center;
 }
 
 @keyframes showIn {

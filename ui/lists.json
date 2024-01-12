@@ -2,6 +2,7 @@
     {
         "id": "faq",
         "title": "FAQ",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo sollicitudin molestie. Aliquam vel venenatis enim.",
         "contents": [
             {"header": "Question 1", "body": "Updated."},
             {"header": "Question 1", "body": "Updated."},
@@ -20,6 +21,7 @@
     {
         "id": "business",
         "title": "Business",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo sollicitudin molestie. Aliquam vel venenatis enim.",
         "contents": [
             {"header": "Question 1", "body": "Updated."},
             {"header": "Question 2", "body": "Updated."}
@@ -28,6 +30,7 @@
     {
         "id": "organization",
         "title": "Organization",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo sollicitudin molestie. Aliquam vel venenatis enim.",
         "contents": [
             {"header": "Question 1", "body": "Updated."},
             {"header": "Question 2", "body": "Updated."}
@@ -36,6 +39,7 @@
     {
         "id": "missions",
         "title": "Missions",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo sollicitudin molestie. Aliquam vel venenatis enim.",
         "contents": [
             {"header": "Question 1", "body": "Updated."},
             {"header": "Question 2", "body": "Updated."}
