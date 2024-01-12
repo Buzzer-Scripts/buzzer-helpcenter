@@ -239,11 +239,8 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: url("./img/bg.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url("./img/bg.png") center center no-repeat;
+    background-size: 100% 100%;
 }
 
 .bz-menu-title-wrapper {

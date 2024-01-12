@@ -1,10 +1,11 @@
 $(function() {
     window.addEventListener("message", function(e) {
-        if (e.data.show) {
-            $("body").fadeIn("100");
-        } else {
-            $("body").fadeOut("100");
-        };
+        let data = e.data;
+        if (data.action === "show") {
+            if (data.status) {
+                displayUI(true);
+            }
+        }
     });    
 
     function loadContentForTab(tabId) {
@@ -64,16 +65,23 @@ $(function() {
         $(this).toggleClass("active");
         $(this).next(".accordion__item__content").slideToggle(200).toggleClass("active");
     });
-    
-    $(document).on("keyup", function (e) {
-        if (e.which == 27) {
+
+    function displayUI(bool) {
+        if (bool) {
+            $("body").fadeIn("100");
+        } else {
             $("body").fadeOut("100");
             $("#bz-container").show();
             $("#bz-container-1 .bz-ask-menu").removeAttr("data-list");
             $(".accordion__item__content").slideUp(200).removeClass("active");
             $(".accordion__item__header").removeClass("active");
+        }
+    };
+
+    $(document).on("keyup", function (e) {
+        if (e.which == 27) {
+            displayUI(false);
             $.post(`https://${GetParentResourceName()}/close`);
         }
     });
-
 });
